@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/principalMenu">
 
+    <fragment
+        android:id="@+id/principalMenu"
+        android:name="com.example.peliculas.PrincipalMenu"
+        android:label="fragment_principal_menu"
+        tools:layout="@layout/fragment_principal_menu" >
+        <action
+            android:id="@+id/action_principalMenu_to_addGenero2"
+            app:destination="@id/addGenero2" />
+    </fragment>
+    <fragment
+        android:id="@+id/addGenero2"
+        android:name="com.example.peliculas.addGenero"
+        android:label="fragment_add_genero"
+        tools:layout="@layout/fragment_add_genero" />
 </navigation>
