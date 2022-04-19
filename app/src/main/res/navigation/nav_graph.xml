@@ -13,10 +13,18 @@
         <action
             android:id="@+id/action_principalMenu_to_addGenero2"
             app:destination="@id/addGenero2" />
+        <action
+            android:id="@+id/action_principalMenu_to_listGenero"
+            app:destination="@id/listGenero" />
     </fragment>
     <fragment
         android:id="@+id/addGenero2"
         android:name="com.example.peliculas.addGenero"
         android:label="fragment_add_genero"
         tools:layout="@layout/fragment_add_genero" />
+    <fragment
+        android:id="@+id/listGenero"
+        android:name="com.example.peliculas.listGenero"
+        android:label="fragment_list_genero"
+        tools:layout="@layout/fragment_list_genero" />
 </navigation>

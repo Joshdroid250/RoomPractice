@@ -31,10 +31,10 @@ class PrincipalMenu : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         fragBinding.btnVerGenero.setOnClickListener {
-
+            it.findNavController().navigate(R.id.action_principalMenu_to_listGenero)
         }
         fragBinding.addGenero.setOnClickListener {
-            it.findNavController().navigate(R.id.addGenero)
+            it.findNavController().navigate(R.id.action_principalMenu_to_addGenero2)
         }
     }
 }

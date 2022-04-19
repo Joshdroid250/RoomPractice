@@ -10,7 +10,6 @@ import models.Genero
 interface MainDataBaseProvider{
     fun generoDao() : Genero_Dao
 
-
 }
 
 
