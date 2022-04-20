@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_principalMenu_to_listGenero"
             app:destination="@id/listGenero" />
+        <action
+            android:id="@+id/action_principalMenu_to_editGenero"
+            app:destination="@id/editGenero" />
     </fragment>
     <fragment
         android:id="@+id/addGenero2"
