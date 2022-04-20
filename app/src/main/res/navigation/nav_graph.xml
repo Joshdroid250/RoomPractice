@@ -27,4 +27,9 @@
         android:name="com.example.peliculas.listGenero"
         android:label="fragment_list_genero"
         tools:layout="@layout/fragment_list_genero" />
+    <fragment
+        android:id="@+id/editGenero"
+        android:name="com.example.peliculas.editGenero"
+        android:label="fragment_edit_genero"
+        tools:layout="@layout/fragment_edit_genero" />
 </navigation>
