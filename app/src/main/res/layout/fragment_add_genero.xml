@@ -18,16 +18,7 @@
        android:layout_marginTop="200dp"
        android:hint="Ingrese el genero"
        ></EditText>
-    <EditText
-        android:id="@+id/edtActivo"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:digits="01"
-        android:inputType="number"
-        android:hint="Ingrese 1 = si  ó  0 = no"
-        ></EditText>
+
     <Button
         android:id="@+id/btnSaveG"
         android:layout_width="match_parent"

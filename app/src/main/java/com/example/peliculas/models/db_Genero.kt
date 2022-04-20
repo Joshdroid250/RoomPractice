@@ -1,16 +1,19 @@
-package models
+package com.example.peliculas.models
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import models.Dao.Genero_Dao
-import models.Genero
+import com.example.peliculas.models.Dao.Genero_Dao
 
 interface MainDataBaseProvider{
     fun generoDao() : Genero_Dao
 
 }
+
+@Database(entities=[Genero::class,],
+    version = 4
+    )
 
 
 abstract class db_Genero: RoomDatabase(), MainDataBaseProvider {

@@ -1,4 +1,4 @@
-package models
+package com.example.peliculas.models
 
 data class GeneroItem(
     val idGenero: Int,

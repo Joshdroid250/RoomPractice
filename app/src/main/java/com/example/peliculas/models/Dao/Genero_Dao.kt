@@ -1,6 +1,6 @@
-package models.Dao
+package com.example.peliculas.models.Dao
 import androidx.room.*
-import models.Genero
+import com.example.peliculas.models.Genero
 @Dao
 interface Genero_Dao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)

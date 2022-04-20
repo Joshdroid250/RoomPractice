@@ -1,4 +1,4 @@
-package models
+package com.example.peliculas.models
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -11,5 +11,5 @@ data class Genero (
     @ColumnInfo(name = "nombre")
     val nombre:String,
     @ColumnInfo(name = "activo")
-    val activo:Boolean
+    var activo:Boolean
 )
