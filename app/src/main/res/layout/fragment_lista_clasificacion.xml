@@ -5,36 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".listaClasificacion">
 
     <!-- TODO: Update blank fragment layout -->
-
-    <ImageView
-        android:id="@+id/imgLogo"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
-        android:src="@drawable/logo"
-        android:layout_marginTop="10dp"
-        ></ImageView>
-    <TextView
-        android:id="@+id/tvGeneros"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:text="Generos Ingresados"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        android:textSize="24dp"></TextView>
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/RwGenero"
+        android:id="@+id/RvClasificacion"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="150dp"/>
-
+        android:layout_height="match_parent"/>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/BtnAddGenero"
+        android:id="@+id/BtnAgregar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
@@ -44,4 +24,5 @@
         app:layout_constraintEnd_toEndOf="parent"
 
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,35 +26,5 @@
         android:textStyle="bold"
         ></Button>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="410dp"
-        android:layout_height="70dp"
-        android:background="@color/Navcolor"
-        android:layout_marginTop="260dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <com.google.android.material.navigation.NavigationView
-                android:layout_width="136dp"
-                android:layout_height="match_parent"></com.google.android.material.navigation.NavigationView>
-            <com.google.android.material.navigation.NavigationView
-                android:layout_width="136dp"
-                android:layout_height="match_parent"
-                android:background="@color/NavcolorxD"></com.google.android.material.navigation.NavigationView>
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:layout_width="136dp"
-                android:layout_height="match_parent"
-                android:background="@color/black">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/home"></ImageView>
-            </com.google.android.material.bottomnavigation.BottomNavigationView>
-        </LinearLayout>
-
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </LinearLayout>

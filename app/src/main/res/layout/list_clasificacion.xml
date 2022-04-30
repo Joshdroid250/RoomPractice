@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/cvGenero"
+    android:id="@+id/cvClasificacion"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -16,7 +16,7 @@
         android:padding="10dp">
 
         <TextView
-            android:id="@+id/tvNombre"
+            android:id="@+id/tvAbreviacion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -24,15 +24,23 @@
             android:layout_marginLeft="46dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="60dp"
-            android:hint="Genero"
+            android:hint="Abreviacion"
             android:textSize="20dp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tvActivo"
+            android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tvNombre"
+            android:layout_below="@+id/tvAbreviacion"
+            android:hint="Nombre"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
             android:hint="Activo"
             android:textSize="20dp"
             android:textStyle="bold"/>

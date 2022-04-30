@@ -3,23 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/principalMenu">
+    app:startDestination="@id/listGenero">
 
-    <fragment
-        android:id="@+id/principalMenu"
-        android:name="com.example.peliculas.PrincipalMenu"
-        android:label="fragment_principal_menu"
-        tools:layout="@layout/fragment_principal_menu" >
-        <action
-            android:id="@+id/action_principalMenu_to_addGenero2"
-            app:destination="@id/addGenero2" />
-        <action
-            android:id="@+id/action_principalMenu_to_listGenero"
-            app:destination="@id/listGenero" />
-        <action
-            android:id="@+id/action_principalMenu_to_editGenero"
-            app:destination="@id/editGenero" />
-    </fragment>
     <fragment
         android:id="@+id/addGenero2"
         android:name="com.example.peliculas.addGenero"
@@ -29,10 +14,22 @@
         android:id="@+id/listGenero"
         android:name="com.example.peliculas.listGenero"
         android:label="fragment_list_genero"
-        tools:layout="@layout/fragment_list_genero" />
+        tools:layout="@layout/fragment_list_genero" >
+        <action
+            android:id="@+id/action_listGenero_to_addGenero2"
+            app:destination="@id/addGenero2" />
+        <action
+            android:id="@+id/action_listGenero_to_editGenero"
+            app:destination="@id/editGenero" />
+    </fragment>
     <fragment
         android:id="@+id/editGenero"
         android:name="com.example.peliculas.editGenero"
         android:label="fragment_edit_genero"
         tools:layout="@layout/fragment_edit_genero" />
+    <fragment
+        android:id="@+id/listaClasificacion2"
+        android:name="com.example.peliculas.listaClasificacion"
+        android:label="fragment_lista_clasificacion"
+        tools:layout="@layout/fragment_lista_clasificacion" />
 </navigation>
